@@ -4,8 +4,8 @@
 
 **Входные данные**:
 
-1. [Таблицы](https://code.s3.yandex.net/middle-python/learning-materials/db.sqlite){target="_blank"}💾 в SQLite, на которые нужно опираться при запросах: `film_work`, `person`, `genre`, `genre_film_work`, `person_film_work`.
-2. [Схема данных](https://code.s3.yandex.net/middle-python/learning-materials/es_schema.txt){target="_blank"}💾 индекса `movies`, в которую должна производиться загрузка фильмов.
+1. [Таблицы](https://code.s3.yandex.net/middle-python/learning-materials/db.sqlite)💾 в SQLite, на которые нужно опираться при запросах: `film_work`, `person`, `genre`, `genre_film_work`, `person_film_work`.
+2. [Схема данных](https://code.s3.yandex.net/middle-python/learning-materials/es_schema.txt)💾 индекса `movies`, в которую должна производиться загрузка фильмов.
 
 **Что должно получиться в итоге**:
 
@@ -95,7 +95,7 @@ curl -XPOST http://127.0.0.1:9200/_bulk?filter_path=items.*.error -H 'Content-Ty
 
 В результате выполнения запроса вы получите список тех документов, которые не удалось сохранить.
 
-Подробнее про сохранение пачки документов можно прочитать в [официальной документации](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-bulk.html){target="_blank"} на английском языке.
+Подробнее про сохранение пачки документов можно прочитать в [официальной документации](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-bulk.html) на английском языке.
 
 ## Объяснение схемы данных индекса movies
 
